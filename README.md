@@ -41,6 +41,6 @@ $$
 
 $$
 \begin{aligned}
-\frac{d\tilde{x}}{d\tilde{t}} = \sigma t_0 y_0/x_0(\tilde{y}-(x_0/y_0) \tilde{x}) \\
+\frac{d\tilde{x}}{d\tilde{t}} = \sigma \frac{t_0 y_0}{x_0} \left(\tilde{y}-\frac{x_0}{y_0} \tilde{x} \tilde{x}) \\
 \end{aligned}
 $$
