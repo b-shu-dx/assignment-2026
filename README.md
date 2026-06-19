@@ -41,19 +41,18 @@ $$
 
 $$
 \begin{aligned}
-\frac{d\tilde{x}}{d\tilde{t}} = \sigma \frac{t_0 y_0}{x_0} \left( \tilde{y} - \frac{x_0}{y_0} \tilde{x} \right) \\
+\frac{d\tilde{x}}{d\tilde{t}} &= \sigma \frac{t_0 y_0}{x_0} \left( \tilde{y} - \frac{x_0}{y_0} \tilde{x} \right) \\
 \frac{d\tilde{y}}{d\tilde{t}} = \frac{x_0 t_0}{y_0} \left( r\tilde{x} - \frac{y_0}{x_0} \tilde{y} - z_0 \tilde{x} \tilde{z} \right) \\
 \frac{d\tilde{z}}{d\tilde{t}} = \frac{x_0 y_0 t_0}{z_0} \left( \tilde{x} \tilde{y} - \frac{b z_0}{x_0 y_0} \tilde{z} \right) \\
-$$
 \end{aligned}
 $$
 となる。
 
 $$
 \begin{aligned}
-x_o = y_0 \\
-z_0 = x_0^2 t_0 \\
-t_0 = 1 \\
+x_o &= y_0 \\
+z_0 &= x_0^2 t_0 \\
+t_0 &= 1 \\
 \end{aligned}
 $$
 と単位系を設定し代入すると
