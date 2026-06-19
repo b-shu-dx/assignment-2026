@@ -89,7 +89,7 @@ $$
 
 $$
 \begin{aligned}
-\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}}
-<=>\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}} //
+\frac{\tilde{z}(\tilde{t} + \Delta \tilde{t}) - \tilde{z}(\tilde{t})}{\Delta \tilde{t}} = \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{y}(\tilde{t} + \Delta \tilde{t}) - b\tilde{z}(\tilde{t} + \Delta \tilde{t})
+<=>\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}}
 \end{aligned}
 $$
