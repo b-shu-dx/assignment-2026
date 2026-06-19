@@ -42,10 +42,11 @@ $$
 $$
 \begin{aligned}
 \frac{d\tilde{x}}{d\tilde{t}} &= \sigma \frac{t_0 y_0}{x_0} \left( \tilde{y} - \frac{x_0}{y_0} \tilde{x} \right) \\
-\frac{d\tilde{y}}{d\tilde{t}} = \frac{x_0 t_0}{y_0} \left( r\tilde{x} - \frac{y_0}{x_0} \tilde{y} - z_0 \tilde{x} \tilde{z} \right) \\
-\frac{d\tilde{z}}{d\tilde{t}} = \frac{x_0 y_0 t_0}{z_0} \left( \tilde{x} \tilde{y} - \frac{b z_0}{x_0 y_0} \tilde{z} \right) \\
+\frac{d\tilde{y}}{d\tilde{t}} &= \frac{x_0 t_0}{y_0} \left( r\tilde{x} - \frac{y_0}{x_0} \tilde{y} - z_0 \tilde{x} \tilde{z} \right) \\
+\frac{d\tilde{z}}{d\tilde{t}} &= \frac{x_0 y_0 t_0}{z_0} \left( \tilde{x} \tilde{y} - \frac{b z_0}{x_0 y_0} \tilde{z} \right) \\
 \end{aligned}
 $$
+
 となる。
 
 $$
@@ -55,6 +56,7 @@ z_0 &= x_0^2 t_0 \\
 t_0 &= 1 \\
 \end{aligned}
 $$
+
 と単位系を設定し代入すると
 
 $$
@@ -62,5 +64,14 @@ $$
 \frac{d\tilde{x}}{d\tilde{t}} &= \sigma t_0 (\tilde{y} - \tilde{x}) \\
 \frac{d\tilde{y}}{d\tilde{t}} &= r\tilde{x} - \tilde{y} - \tilde{x} \tilde{z} \\
 \frac{d\tilde{z}}{d\tilde{t}} &= \tilde{x} \tilde{y} - b\tilde{z} \\
+\end{aligned}
+$$
+
+と導かれる。  
+ここで半陰オイラー法を用いて離散化を行う。　
+
+$$
+\begin{aligned}
+\tilde{x}(\tilde{t}+\delta \tilde[t}) = \tilde{x}(\tilde{t})
 \end{aligned}
 $$
