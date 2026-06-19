@@ -16,6 +16,7 @@ lorenz_3D.pdf -> x,y,zの三次元のグラフ　
 
 ### 数学的導出
 微分方程式  
+
 $$
 \begin{aligned}
 \dot{x} &= \sigma*(y-x) \\
@@ -23,8 +24,10 @@ $$
 \dot{x} &= x*y-b*z \\
 \end{aligned}
 $$
+
 を導入する。  
 ここで、  
+
 $$
 \begin{aligned}
 x = \x_0*\tilde{x} \\
@@ -33,9 +36,11 @@ z = \z_0*\tilde{z} \\
 t = \t_0*\tilde{t} \\
 \end{aligned}
 $$
+
 とおき、これを微分方程式に代入し整理すると
+
 $$
 \begin{aligned}
-frac{d\tilde{x}}{d\tilde{t}} = /sigma*\t_0/\x_0
+frac{d\tilde{x}}{d\tilde{t}} = /sigma*\t_0*\y_0/\x_0(\tilde{y}-(\x_0/\y_0)*\tilde{x}
 \end{aligned}
 $$
