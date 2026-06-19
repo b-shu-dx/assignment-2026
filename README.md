@@ -58,11 +58,11 @@ $$
 と単位系を設定し代入すると
 
 $$
-\begin{aligned}
+\begin{align}
 \frac{d\tilde{x}}{d\tilde{t}} &= \sigma t_0 (\tilde{y} - \tilde{x}) \\
 \frac{d\tilde{y}}{d\tilde{t}} &= r\tilde{x} - \tilde{y} - \tilde{x} \tilde{z} \\
 \frac{d\tilde{z}}{d\tilde{t}} &= \tilde{x} \tilde{y} - b\tilde{z} \\
-\end{aligned}
+\end{align}
 $$
 
 と導かれる。  
