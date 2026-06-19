@@ -71,7 +71,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t})}{\Delta \tilde{t}} = \sigma (\tilde{y}(\tilde{t}) - \tilde{x}(\tilde{t})) //
+\frac{\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t})}{\Delta \tilde{t}} = \sigma (\tilde{y}(\tilde{t}) - \tilde{x}(\tilde{t}))
 <=>\tilde{x}(\tilde{t} + \Delta \tilde{t}) = \tilde{x}(\tilde{t}) + \sigma \Delta \tilde{t} \left( \tilde{y}(\tilde{t}) - \tilde{x}(\tilde{t}) \right) \\
 \end{aligned}
 $$
@@ -80,16 +80,16 @@ $$
 
 $$
 \begin{aligned}
-\frac{\tilde{y}(\tilde{t} + \Delta \tilde{t}) - \tilde{y}(\tilde{t})}{\Delta \tilde{t}} = r\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{y}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{z}(\tilde{t}) //
+\frac{\tilde{y}(\tilde{t} + \Delta \tilde{t}) - \tilde{y}(\tilde{t})}{\Delta \tilde{t}} = r\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{y}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{z}(\tilde{t})
 <=>\tilde{y}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{y}(\tilde{t}) + \Delta \tilde{t} \left( r\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{z}(\tilde{t}) \right)}{1 + \Delta \tilde{t}} \\
 \end{aligned}
 $$
-
+\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}}
+<=>\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}} //
 (3)について
 
 $$
 \begin{aligned}
-\frac{\tilde{z}(\tilde{t} + \Delta \tilde{t}) - \tilde{z}(\tilde{t})}{\Delta \tilde{t}} = \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) + \tilde{z}(\tilde{t}) \\
-\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) + \tilde{z}(\tilde{t}) \right) \\
+
 \end{aligned}
 $$
