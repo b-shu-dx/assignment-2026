@@ -1,15 +1,16 @@
 # assignment-2026
 ### 概要  
 ローレンツ方程式の数値的解法。半陰オイラー法を採用した。  
-実行時にb, r, $\sigma$は可変である。  
-
+実行時にx, y, z, b, r, $\sigma$は可変である。    
+今回、初期値は(x,y,z)=(1,1,1), r=28, $\sigma$=10, b=8/3としている。  
+生成されるグラフは$\infty$のような軌跡を描く。  
 ### 動作環境  
 Python 3.14  
 使用ライブラリ: numpy, matplotlib
 
 ### 挙動  
 Lorenz.pyを実行するとファイルが4つ追加される。  
-calc.dat => 計算結果  
+calc.dat -> 計算結果  
 lorenz_x_y.pdf -> x,yのグラフ  
 lorenz_y_z.pdf -> y,zのグラフ  
 lorenz_3D.pdf -> x,y,zの三次元のグラフ　
@@ -51,7 +52,7 @@ $$
 
 $$
 \begin{aligned}
-x_o &= y_0 &= z_0 &= t_0 &= 1 \\
+x_0 = y_0 = z_0 = t_0 = 1 \\
 \end{aligned}
 $$
 
@@ -93,3 +94,5 @@ $$
 <=>\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}}
 \end{aligned}
 $$
+
+これが今回の解析に用いた式である。
