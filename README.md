@@ -51,9 +51,7 @@ $$
 
 $$
 \begin{aligned}
-x_o &= y_0 \\
-z_0 &= x_0^2 t_0 \\
-t_0 &= 1 \\
+x_o &= y_0 &= z_0 &= t_0 &= 1 \\
 \end{aligned}
 $$
 
