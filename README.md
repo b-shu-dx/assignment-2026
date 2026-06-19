@@ -3,7 +3,7 @@
 ローレンツ方程式の数値的解法。半陰オイラー法を採用した。  
 実行時にx, y, z, b, r, $\sigma$は可変である。    
 今回、初期値は(x,y,z)=(1,1,1), r=28, $\sigma$=10, b=8/3としている。  
-生成されるグラフは$\infty$のような軌跡を描く。  
+生成されるグラフは $\infty$のような軌跡を描く。  
 ### 動作環境  
 Python 3.14  
 使用ライブラリ: numpy, matplotlib
@@ -60,7 +60,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{d\tilde{x}}{d\tilde{t}} &= \sigma t_0 (\tilde{y} - \tilde{x}) \quad (1) \\
+\frac{d\tilde{x}}{d\tilde{t}} &= \sigma (\tilde{y} - \tilde{x}) \quad (1) \\
 \frac{d\tilde{y}}{d\tilde{t}} &= r\tilde{x} - \tilde{y} - \tilde{x}  \tilde{z} \quad (2) \\
 \frac{d\tilde{z}}{d\tilde{t}} &= \tilde{x} \tilde{y} - b\tilde{z} \quad (3) \\
 \end{aligned}
@@ -95,4 +95,4 @@ $$
 \end{aligned}
 $$
 
-これが今回の解析に用いた式である。
+これらが今回の解析に用いた式である。
