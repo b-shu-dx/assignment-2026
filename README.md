@@ -19,9 +19,9 @@ lorenz_3D.pdf -> x,y,zの三次元のグラフ　
 
 $$
 \begin{aligned}
-\dot{x} &= \sigma*(y-x) \\
-\dot{y} &= r*x-y-x*z \\
-\dot{x} &= x*y-b*z \\
+\dot{x} &= \sigma (y-x) \\
+\dot{y} &= r x-y-x z \\
+\dot{z} &= x y-b z \\
 \end{aligned}
 $$
 
@@ -30,10 +30,10 @@ $$
 
 $$
 \begin{aligned}
-x &= x_0 \cdot \tilde{x} \\
-y &= y_0 \cdot \tilde{y} \\
-z &= z_0 \cdot \tilde{z} \\
-t &= t_0 \cdot \tilde{t}
+x &= x_0 \tilde{x} \\
+y &= y_0 \tilde{y} \\
+z &= z_0 \tilde{z} \\
+t &= t_0 \tilde{t} \\
 \end{aligned}
 $$
 
@@ -41,6 +41,6 @@ $$
 
 $$
 \begin{aligned}
-frac{d\tilde{x}}{d\tilde{t}} = /sigma*\t_0*\y_0/\x_0(\tilde{y}-(\x_0/\y_0)*\tilde{x} \\
+\frac{d\tilde{x}}{d\tilde{t}} = \sigma t_0 y_0/x_0(\tilde{y}-(x_0/y_0) \tilde{x}) \\
 \end{aligned}
 $$
