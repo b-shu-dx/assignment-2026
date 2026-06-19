@@ -84,12 +84,12 @@ $$
 <=>\tilde{y}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{y}(\tilde{t}) + \Delta \tilde{t} \left( r\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{z}(\tilde{t}) \right)}{1 + \Delta \tilde{t}} \\
 \end{aligned}
 $$
-\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}}
-<=>\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}} //
+
 (3)について
 
 $$
 \begin{aligned}
-
+\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}}
+<=>\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) \right)}{1 + b \Delta \tilde{t}} //
 \end{aligned}
 $$
