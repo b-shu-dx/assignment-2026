@@ -59,17 +59,37 @@ $$
 
 $$
 \begin{aligned}
-\frac{d\tilde{x}}{d\tilde{t}} &= \sigma t_0 (\tilde{y} - \tilde{x}) (1) \\
-\frac{d\tilde{y}}{d\tilde{t}} &= r\tilde{x} - \tilde{y} - \tilde{x}  \tilde{z} (2) \\
-\frac{d\tilde{z}}{d\tilde{t}} &= \tilde{x} \tilde{y} - b\tilde{z} (3) \\
+\frac{d\tilde{x}}{d\tilde{t}} &= \sigma t_0 (\tilde{y} - \tilde{x}) \quad (1) \\
+\frac{d\tilde{y}}{d\tilde{t}} &= r\tilde{x} - \tilde{y} - \tilde{x}  \tilde{z} \quad (2) \\
+\frac{d\tilde{z}}{d\tilde{t}} &= \tilde{x} \tilde{y} - b\tilde{z} \quad (3) \\
 \end{aligned}
 $$
 
 と導かれる。  
 ここで半陰オイラー法を用いて離散化を行う。　
+(1)について
 
 $$
 \begin{aligned}
-\tilde{x}(\tilde{t}+\delta \tilde[t}) = \tilde{x}(\tilde{t})
+\frac{\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t})}{\Delta \tilde{t}} = \sigma (\tilde{y}(\tilde{t}) - \tilde{x}(\tilde{t})) //
+<=>\tilde{x}(\tilde{t} + \Delta \tilde{t}) = \tilde{x}(\tilde{t}) + \sigma \Delta \tilde{t} \left( \tilde{y}(\tilde{t}) - \tilde{x}(\tilde{t}) \right) \\
+\end{aligned}
+$$
+
+(2)について
+
+$$
+\begin{aligned}
+\frac{\tilde{y}(\tilde{t} + \Delta \tilde{t}) - \tilde{y}(\tilde{t})}{\Delta \tilde{t}} = r\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{y}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{z}(\tilde{t}) //
+<=>\tilde{y}(\tilde{t} + \Delta \tilde{t}) = \frac{\tilde{y}(\tilde{t}) + \Delta \tilde{t} \left( r\tilde{x}(\tilde{t} + \Delta \tilde{t}) - \tilde{x}(\tilde{t} + \Delta \tilde{t})\tilde{z}(\tilde{t}) \right)}{1 + \Delta \tilde{t}} \\
+\end{aligned}
+$$
+
+(3)について
+
+$$
+\begin{aligned}
+\frac{\tilde{z}(\tilde{t} + \Delta \tilde{t}) - \tilde{z}(\tilde{t})}{\Delta \tilde{t}} = \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) + \tilde{z}(\tilde{t}) \\
+\tilde{z}(\tilde{t} + \Delta \tilde{t}) = \tilde{z}(\tilde{t}) + \Delta \tilde{t} \left( \tilde{x}(\tilde{t} + \Delta \tilde{t}) \tilde{y}(\tilde{t} + \Delta \tilde{t}) + \tilde{z}(\tilde{t}) \right) \\
 \end{aligned}
 $$
